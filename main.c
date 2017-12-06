@@ -92,7 +92,7 @@ int main()
 
 void dodaj_narz(narz **lista) {
     narz *pom;
-    pom = malloc(sizeof(narz*));
+    pom = (narz*)malloc(sizeof(narz));
     printf("Podaj nazwe: ");
     scanf("%s", pom->nazwa);
     printf("Podaj ilosc wypozyczen: ");
