@@ -34,6 +34,7 @@ int main()
     int wybor = -1;
     while(1) {
         system("cls");
+        printf("Debug:\nLiczba narzedzi = %d\nLiczba osob = %d\n\n", dlugosc_listy(&listaN), dlugosc_listy(&listaO));
         printf("----- MENU -----\n\n");
         printf("1. Dodaj narzedzie\n");
         printf("2. Edytuj narzedzie\n");
