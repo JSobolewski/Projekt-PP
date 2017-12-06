@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1512588415 source:c:\users\jakub sobolewski\desktop\pp c99\projektpp\main.c
+	<stdio.h>
+	<stdlib.h>
+
