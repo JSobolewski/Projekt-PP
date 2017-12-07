@@ -34,7 +34,8 @@ int main()
     int wybor = -1;
     while(1) {
         system("cls");
-        printf("Debug:\nLiczba narzedzi = %d\nLiczba osob = %d\n\n", dlugosc_listy(&listaN), dlugosc_listy(&listaO));
+        //printf("Debug:\nLiczba narzedzi = %d\nLiczba osob = %d\n\n", dlugosc_listy(&listaN), dlugosc_listy(&listaO));
+        printf("Debug:\nLiczba narzedzi = %d\n\n", dlugosc_listy(&listaN));
         printf("----- MENU -----\n\n");
         printf("1. Dodaj narzedzie\n");
         printf("2. Edytuj narzedzie\n");
@@ -119,15 +120,15 @@ void dodaj_narz(narz **lista) {
 }
 
 int dlugosc_listy(narz **listaN) {
-    int i;
+    int i = 0;
     narz *wsk = *listaN;
-    if((*listaN) == NULL)
+    if(wsk == NULL)
         return 0;
     else {
-        i = 1;
-        narz *wsk = *listaN;
+        //i = 1;
+        //narz *wsk = *listaN;
         while(wsk->next != NULL) {
-            i++;
+            i++;printf("i=%d",i);
             wsk = wsk->next;
         }
     }
